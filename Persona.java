@@ -1,8 +1,6 @@
 package modelo;
 
-
-
-public class Persona{ //sin interfaz xq solo tiene atributos
+public class Persona implements Comparable<Persona> { //sin interfaz xq solo tiene atributos
 
 	//Atributos de una Persona estudiante de UADE
 	private String nombre;
@@ -55,7 +53,10 @@ public class Persona{ //sin interfaz xq solo tiene atributos
 	public int getLegajo() {
 		return legajo;
 	}
-	
-	
+
+	@Override
+	public int compareTo(Persona otra) {
+		return Integer.compare(this.legajo, otra.legajo);
+	}
 	
 }
