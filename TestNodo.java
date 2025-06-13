@@ -1,5 +1,6 @@
 package test;
 
+import interfaces.INodo;
 import modelo.Nodo;
 import modelo.Persona;
 
@@ -8,8 +9,8 @@ public class TestNodo {
         Persona p1 = new Persona("Bouzat", 39076675, 8.0f, 1201334);
         Persona p2 = new Persona("Marchiori", 42025677, 7.0f, 1278765);
 
-        Nodo<Persona> nodo1 = new Nodo<>(p1);
-        Nodo<Persona> nodo2 = new Nodo<>(p2);
+        INodo<Persona> nodo1 = new Nodo<>(p1);
+        INodo<Persona> nodo2 = new Nodo<>(p2);
 
         // Test getValor()
         System.out.println("Valor del nodo1: " + nodo1.getValor()); // Bouzat, 39076675, 8.0f, 1201334
