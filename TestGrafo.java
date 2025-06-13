@@ -1,5 +1,6 @@
 package test;
 
+import interfaces.IGrafo;
 import modelo.Grafo;
 import modelo.Persona;
 
@@ -7,7 +8,7 @@ public class TestGrafo {
 
 	public static void main(String[] args) {
 		// Creamos el grafo
-		Grafo<Persona> grafo = new Grafo<>();
+		IGrafo<Persona> grafo = new Grafo<>();
 
 		// Creamos algunas personas
 		Persona p1 = new Persona("Ana", 12345678, 8.5f, 1001);
